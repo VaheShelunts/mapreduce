@@ -1,0 +1,6 @@
+1. SELECT payment_type, SUM(item) as sum_of_values from minipurchases GROUP BY payment_type ORDER BY sum_of_values DESC;
+2. SELECT category, SUM(item) as sum_of_values from minipurchases GROUP BY category ORDER BY sum_of_values DESC;
+3. SELECT category, COUNT(item) as num_of_purchases GROUP BY category ORDER BY sum_of_values DESC;
+4. SELECT category, COUNT(item) as num_of_purchases  WHERE category in ("Computers", "Cameras", "Video Games”) GROUP BY category ORDER BY sum_of_values DESC
+5. SELECT category, COUNT(item) as num_of_purchases  WHERE num_of_purchases > 114 GROUP BY category ORDER BY sum_of_values DESC
+6. SELECT category, SUM(item)/COUNT(item) as average_sales from minipurchases GROUP BY category ORDER BY average_sales DESC;
